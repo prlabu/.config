@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomKeySet derivedfrom="Mac" modifieddefault="false">
+   <Context id="Global">
+      <Action id="evaluate-selection">
+         <Stroke code="VK_ENTER" meta="on" shift="on" sysctrl="on"/>
+      </Action>
+      <Action id="eval-cell-and-advance"/>
+      <Action id="comment">
+         <Stroke code="VK_SLASH" meta="on" sysctrl="on"/>
+         <Stroke code="VK_2" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="uncomment">
+         <Stroke code="VK_T" meta="on" sysctrl="on"/>
+         <Stroke code="VK_1" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="collapse-all-folds">
+         <Stroke code="VK_EQUALS" meta="on" sysctrl="on"/>
+         <Stroke code="VK_OPEN_BRACKET" meta="on" shift="on" sysctrl="on"/>
+      </Action>
+      <Action id="collapse-fold">
+         <Stroke code="VK_PERIOD" meta="on" sysctrl="on"/>
+         <Stroke code="VK_OPEN_BRACKET" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="expand-fold">
+         <Stroke code="VK_PERIOD" meta="on" shift="on" sysctrl="on"/>
+         <Stroke code="VK_CLOSE_BRACKET" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+</CustomKeySet>
