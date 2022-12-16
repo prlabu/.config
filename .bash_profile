@@ -17,6 +17,23 @@ alias editbp='code ~/.bash_profile'
 
 alias newpyenv='python3 -m venv ~/pyenvs/'
 
+
+# make zprofile pull from bash_profile
+
+# my favorites list keeps disappearing
+# Let's try to add them to a local alias such that they don't disappear
+
+ln -s /Volumes/GoogleDrive/My\ Drive/shbt ~/Desktop/shbt
+ln -s /Volumes/Nexus4/DBS ~/Desktop/nexus4-DBS
+ln -s /Volumes/Nexus4/DBS/derivatives ~/Desktop/DBS-derivatives
+
+ln -s /Volumes/Nexus4/DBS/groupanalyses/task-lombard/20221101-artifact-rejection-PLB ~/Desktop/artifact-rejection
+
+
+
+
+
+
 /Users/latane/Library/Python/2.7/bin/virtualenvwrapper.sh
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -75,4 +92,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+
+# have zsh source bash profile 
+echo source ~/.config/.bash_profile > ~/.zprofile
 
