@@ -33,7 +33,6 @@ ln -s /Volumes/Nexus4/DBS/groupanalyses/task-lombard/20221101-artifact-rejection
 
 
 
-
 /Users/latane/Library/Python/2.7/bin/virtualenvwrapper.sh
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -97,4 +96,7 @@ unset __conda_setup
 
 # have zsh source bash profile 
 echo source ~/.config/.bash_profile > ~/.zprofile
+
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
