@@ -23,12 +23,31 @@ alias newpyenv='python3 -m venv ~/pyenvs/'
 # my favorites list keeps disappearing
 # Let's try to add them to a local alias such that they don't disappear
 
-ln -s /Volumes/GoogleDrive/My\ Drive/shbt ~/Desktop/shbt
-ln -s /Volumes/Nexus4/DBS ~/Desktop/nexus4-DBS
-ln -s /Volumes/Nexus4/DBS/derivatives ~/Desktop/DBS-derivatives
 
-ln -s /Volumes/Nexus4/DBS/groupanalyses/task-lombard/20221101-artifact-rejection-PLB ~/Desktop/artifact-rejection
+# Create favorites folders
+source="/Volumes/GoogleDrive/My\ Drive/shbt"
+destination="~/Desktop/shbt"
+# check if the symbolic link already exists
+if [ ! -L "$destination" ]; then
+    # create the symbolic link
+    ln -s "$source" "$destination"
+    echo "Creating symbolic link"
+else
+    echo "Symbolic link already exists"
+fi
 
+
+## Create BML favorites folders
+# delete folders
+find ~/Desktop/BML-paths -maxdepth 1 -type l -delete
+# then recreate the symlinks
+ln -s /Volumes/Nexus4/DBS ~/Desktop/BML-paths/DBS
+ln -s /Volumes/Nexus4/DBS/derivatives ~/Desktop/BML-paths/derivatives
+
+ln -s /Volumes/Nexus4/DBS/groupanalyses/task-lombard/20221101-artifact-rejection-PLB ~/Desktop/BML-paths/proj-Lombard-artifact
+ln -s /Volumes/Nexus4/DBS/groupanalyses/task-lombard/20221219-STN-LFP-exploratory-analyses-PLB ~/Desktop/BML-paths/proj-Lombard-subcort
+
+ln -s /Volumes/Nexus4/DBS/groupanalyses/task-lombard/20220922-behavior-overview-PLB ~/Desktop/BML-paths/proj-Lombard-behavior
 
 
 
