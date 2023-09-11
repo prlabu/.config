@@ -19,3 +19,6 @@ git config --global core.excludesfile ~/.gitignore
 brew install xpdf # renderer for exporting matlab figures
 brew install ghostscript # renderer for exporting matlab figures
 
+
+# install karabiner for mapping keys between windows remote desktop and mac
+brew install --cask karabiner-elements
